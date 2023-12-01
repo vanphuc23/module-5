@@ -1,0 +1,30 @@
+<>
+
+Nếu trước đây bạn đã cài đặt create-react-apptrên toàn cầu, bạn nên gỡ cài đặt gói này 
+để đảm bảo npx luôn sử dụng phiên bản create-react-app.
+
+Để gỡ cài đặt, hãy chạy lệnh này: npm uninstall -g create-react-app.
+
+<>
+
+< Câu lệnh để tạo ứng dụng React >
+
+Chạy lệnh này để tạo ứng dụng React có tên my-react-app
+câu lệnh: (npx create-react-app my-react-app)
+
+< Câu lệnh để tạo ứng dụng React >
+
+< Chạy ứng dụng React >
+
+Chạy lệnh này để di chuyển đến thư mục my-react-app: cd my-react-app 
+
+Chạy lệnh này để chạy ứng dụng React my-react-app: npm start
+
+< Chạy ứng dụng React >
+
+< lấy thông tin trình duyệt >
+
+Sử dụng hàm (navigator.userAgent) để lấy thông tin trình duyệt
+Sử dụng JSX để khởi tạo element mang giá trị hiển thị thông tin browser hiện tại: <h4>Browser's details: {navigator.userAgent}</h4>
+
+< lấy thông tin trình duyệt >
