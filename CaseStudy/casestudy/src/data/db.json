@@ -1,0 +1,232 @@
+{
+  "Service": [
+    {
+      "id": 1,
+      "serviceType": {
+        "id": 3,
+        "service": "Room"
+      },
+      "serviceName": "",
+      "area": 0,
+      "rentalCosts": 0,
+      "peopleMax": 0,
+      "rentalType": {},
+      "roomStandards": "",
+      "otherAmenities": "",
+      "poolArea": 0,
+      "numberOfFloors": 0,
+      "freeService": {
+        "name": "",
+        "unit": "",
+        "price": 0
+      }
+    },
+    {
+      "serviceName": "123",
+      "area": 0,
+      "serviceType": {
+        "id": 1,
+        "service": "Villa"
+      },
+      "rentalCosts": 0,
+      "peopleMax": 0,
+      "rentalType": {
+        "id": 4,
+        "type": "Thuê theo giờ"
+      },
+      "roomStandards": "",
+      "otherAmenities": "",
+      "poolArea": 0,
+      "numberOfFloors": 0,
+      "id": 3
+    },
+    {
+      "serviceType": {
+        "id": 2,
+        "service": "House"
+      },
+      "serviceName": "g",
+      "area": 0,
+      "rentalCosts": 0,
+      "peopleMax": 0,
+      "rentalType": {
+        "id": 3,
+        "type": "Thuê theo ngày"
+      },
+      "roomStandards": "",
+      "otherAmenities": "",
+      "numberOfFloors": 0,
+      "id": 5
+    },
+    {
+      "serviceType": {
+        "id": 2,
+        "service": "House"
+      },
+      "serviceName": "ga",
+      "area": 0,
+      "rentalCosts": 0,
+      "peopleMax": 0,
+      "rentalType": {
+        "id": 2,
+        "type": "Thuê theo tháng"
+      },
+      "roomStandards": "",
+      "otherAmenities": "",
+      "numberOfFloors": 0,
+      "id": 6
+    },
+    {
+      "serviceType": {
+        "id": 3,
+        "service": "Room"
+      },
+      "serviceName": "gg",
+      "area": 0,
+      "rentalCosts": 0,
+      "peopleMax": 0,
+      "rentalType": {
+        "id": 2,
+        "type": "Thuê theo tháng"
+      },
+      "freeService": {
+        "id": 4,
+        "name": "nước uống",
+        "unit": "",
+        "price": 20000
+      },
+      "id": 7
+    },
+    {
+      "serviceName": "gga",
+      "area": 0,
+      "serviceType": {
+        "id": 1,
+        "service": "Villa"
+      },
+      "rentalCosts": 0,
+      "peopleMax": 0,
+      "rentalType": {
+        "id": 3,
+        "type": "Thuê theo ngày"
+      },
+      "roomStandards": "a",
+      "otherAmenities": "a",
+      "poolArea": 0,
+      "numberOfFloors": 0,
+      "id": 8
+    }
+  ],
+  "rentalType": [
+    {
+      "id": 1,
+      "type": "Thuê theo năm"
+    },
+    {
+      "id": 2,
+      "type": "Thuê theo tháng"
+    },
+    {
+      "id": 3,
+      "type": "Thuê theo ngày"
+    },
+    {
+      "id": 4,
+      "type": "Thuê theo giờ"
+    }
+  ],
+  "serviceType": [
+    {
+      "id": 1,
+      "service": "Villa"
+    },
+    {
+      "id": 2,
+      "service": "House"
+    },
+    {
+      "id": 3,
+      "service": "Room"
+    }
+  ],
+  "freeService": [
+    {
+      "id": 1,
+      "name": "massage",
+      "unit": "",
+      "price": 1000000
+    },
+    {
+      "id": 2,
+      "name": "karaoke",
+      "unit": "",
+      "price": 200000
+    },
+    {
+      "id": 3,
+      "name": "thức ăn",
+      "unit": "",
+      "price": 50000
+    },
+    {
+      "id": 4,
+      "name": "nước uống",
+      "unit": "",
+      "price": 20000
+    },
+    {
+      "id": 5,
+      "name": "thuê xe di chuyển tham quan resort",
+      "unit": "",
+      "price": 100000
+    }
+  ],
+  "Employee": [
+    {
+      "id": 1,
+      "employeeName": "",
+      "birthday": "",
+      "cmnd": "",
+      "phone": "",
+      "email": "",
+      "level": {},
+      "position": {},
+      "salary": ""
+    }
+  ],
+  "Customer": [
+    {
+      "customerId": 0,
+      "customerName": "",
+      "birthday": "",
+      "gender": "",
+      "cmnd": "",
+      "phone": "",
+      "email": "",
+      "customerType": {},
+      "address": ""
+    }
+  ],
+  "customerType": [
+    {
+      "id": 1,
+      "name": "Diamond"
+    },
+    {
+      "id": 2,
+      "name": "Platinium"
+    },
+    {
+      "id": 3,
+      "name": "Gold"
+    },
+    {
+      "id": 4,
+      "name": "Silver"
+    },
+    {
+      "id": 5,
+      "name": "Member"
+    }
+  ]
+}

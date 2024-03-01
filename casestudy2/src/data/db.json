@@ -1,0 +1,113 @@
+{
+  "villa": [
+    {
+      "serviceName": "villa",
+      "usableArea": "100",
+      "rentalCosts": "1000000",
+      "people": "20",
+      "roomStandards": "vip",
+      "otherAmenitiesDescribed": "xe đạp free",
+      "swimmingPoolArea": "10",
+      "floors": "6",
+      "rentalType": {
+        "id": 3,
+        "type": "Theo ngày"
+      },
+      "id": 1
+    },
+    {
+      "serviceName": "villa Second",
+      "usableArea": "200",
+      "rentalCosts": "1000000",
+      "people": "15",
+      "roomStandards": "vip",
+      "otherAmenitiesDescribed": "xe đạp free",
+      "swimmingPoolArea": "10",
+      "floors": "5",
+      "rentalType": {
+        "id": 3,
+        "type": "Theo ngày"
+      },
+      "id": 2
+    }
+  ],
+  "house": [
+    {
+      "id": 0,
+      "serviceName": "",
+      "usableArea": 0,
+      "rentalCosts": 0,
+      "people": 0,
+      "rentalType": {
+        "id": 1,
+        "type": "Theo năm"
+      },
+      "roomStandards": "",
+      "otherAmenitiesDescribed": "",
+      "floors": 0
+    }
+  ],
+  "room": [
+    {
+      "id": 0,
+      "serviceName": "",
+      "usableArea": 0,
+      "rentalCosts": 0,
+      "people": 0,
+      "rentalType": {
+        "id": 1,
+        "type": "Theo năm"
+      },
+      "accompaniedService": {
+        "id": 1,
+        "name": "massage",
+        "price": 100000
+      }
+    }
+  ],
+  "rentalType": [
+    {
+      "id": 1,
+      "type": "Theo năm"
+    },
+    {
+      "id": 2,
+      "type": "Theo tháng"
+    },
+    {
+      "id": 3,
+      "type": "Theo ngày"
+    },
+    {
+      "id": 4,
+      "type": "Theo giờ"
+    }
+  ],
+  "accompaniedService": [
+    {
+      "id": 1,
+      "name": "massage",
+      "price": 100000
+    },
+    {
+      "id": 2,
+      "name": "karaoke",
+      "price": 100000
+    },
+    {
+      "id": 3,
+      "name": "thức ăn",
+      "price": 30000
+    },
+    {
+      "id": 4,
+      "name": "nước uống",
+      "price": 15000
+    },
+    {
+      "id": 5,
+      "name": "thuê xe di chuyển tham quan resort",
+      "price": 150000
+    }
+  ]
+}

@@ -20,11 +20,12 @@ if (arr1.length > 0) {
 } else {
     console.log("không tìm thấy")
 }
+// arr.includes(5);
 
 // 4. Kiểm tra 1 mảng tất cả các phần tử trong mảng đó có lớn hơn 0 hay không?.
 let arr2 = [];
 arr.forEach((item) => {
-    if (item < 0) {
+    if (item > 0) {
         arr2.push(item);
     }
 });
@@ -33,6 +34,7 @@ if (arr2.length > 0) {
 } else {
     console.log("tất cả các phần tử trong mảng đó có lớn hơn 0");
 }
+// arr.every((element) => element > 0)
 
 // 5. Tìm phần tử đầu tiên trong mảng lớn hơn 3.
 let number = arr.filter((item) => item > 3);
