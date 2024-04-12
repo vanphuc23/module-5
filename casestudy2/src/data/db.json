@@ -109,5 +109,44 @@
       "name": "thuê xe di chuyển tham quan resort",
       "price": 150000
     }
+  ],
+
+  "customer": [
+    {
+      "id": 0,
+      "name": "",
+      "date": "",
+      "gender": "",
+      "cmnd": "",
+      "phone": "",
+      "email": "",
+      "typeCustomer": {
+        "id": 1,
+        "type": "Diamond"
+      },
+      "address": ""
+    }
+  ],
+  "typeCustomer": [
+    {
+      "id": 1,
+      "type": "Diamond"
+    },
+    {
+      "id": 2,
+      "type": "Platinium"
+    },
+    {
+      "id": 3,
+      "type": "Gold"
+    },
+    {
+      "id": 4,
+      "type": "Silver"
+    },
+    {
+      "id": 5,
+      "type": "Member"
+    }
   ]
 }

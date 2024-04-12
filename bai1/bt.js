@@ -1,4 +1,4 @@
-let arr = [1, 2, 5, 6];
+ let arr = [1, 2, 5, 6];
 
 // 1. Tạo một mảng mới chứa các số lớn hơn 5 từ mảng ban đầu
 let arrNew = arr.filter((item) => item > 5);

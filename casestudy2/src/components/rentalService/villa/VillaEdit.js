@@ -14,6 +14,7 @@ function VillaEdit() {
         let temp = await findByIdVilla(id);
         setVilla({...temp, rentalType: JSON.stringify(temp.rentalType)});
     }
+    console.log(villa);
 
     const list = async () => {
         let temp = await listRentalType();

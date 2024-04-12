@@ -26,7 +26,7 @@ function Create() {
     }
 
     const validate = {
-        buyDate: Yup.date().required("Required").max(new Date(),"Ngày nhập vào phải sau ngày hiện tại"),
+        buyDate: Yup.date().required("Required").max(new Date(),"Ngày nhập vào phải trước ngày hiện tại"),
         number: Yup.number().required("Required").integer("Số nhập vào phải là số nguyên dương").positive("Số nhập vào phải là số nguyên dương").min(1,"Số nhập vào phải lớn hơn 0"),
     }
 
@@ -75,9 +75,9 @@ function Create() {
                                 </Field>
                             </div>
                             {
-                                isSubmitting ? <></> :
-                                    <button type='submit' className='btn btn-primary'>Submit</button>
-                            }
+                            isSubmitting ? <></> :
+                                <button type='submit' className='btn btn-primary'>Submit</button>
+                        }
                         </Form>
                     )
                 }

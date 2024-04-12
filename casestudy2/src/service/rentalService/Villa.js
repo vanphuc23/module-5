@@ -51,3 +51,11 @@ export const deleteVilla = async (id) => {
         console.log(e);
     }
 }
+
+export const deleteAllVilla = async (array) => {
+    try {
+        await axios.delete(`http://localhost:8080/villa/${array}`)
+    } catch (e) {
+        console.log(e);
+    }
+}

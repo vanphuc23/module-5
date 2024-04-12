@@ -1,0 +1,77 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "code": "PROD-0001",
+      "name": "Blackmores Omega",
+      "description": "",
+      "type": {
+        "id": 1,
+        "name": "Thực phẩm chức năng",
+        "description": "đồ ăn"
+      },
+      "price": "598000",
+      "number": "1000",
+      "date": "2022-01-24"
+    },
+    {
+      "id": 2,
+      "code": "PROD-0002",
+      "name": "Blackmores CoQ10 150mg",
+      "description": "",
+      "type": {
+        "id": 1,
+        "name": "Thực phẩm chức năng",
+        "description": "đồ ăn"
+      },
+      "price": "513000",
+      "number": "100",
+      "date": "2022-10-15"
+    },
+    {
+      "code": "PROD-0003",
+      "name": "Máy đo huyết áp",
+      "price": 1350000,
+      "number": 500,
+      "date": "2023-02-03",
+      "description": "y tế",
+      "type": {
+        "id": 2,
+        "name": "Thiết bị y tế",
+        "description": "y tế"
+      },
+      "id": 3
+    },
+    {
+      "code": "PROD-0004",
+      "name": "a",
+      "price": 1,
+      "number": 1,
+      "date": "2024-03-12",
+      "description": "1",
+      "type": {
+        "id": 1,
+        "name": "Thực phẩm chức năng",
+        "description": "đồ ăn"
+      },
+      "id": 4
+    }
+  ],
+  "type": [
+    {
+      "id": 1,
+      "name": "Thực phẩm chức năng",
+      "description": "đồ ăn"
+    },
+    {
+      "id": 2,
+      "name": "Thiết bị y tế",
+      "description": "y tế"
+    },
+    {
+      "id": 3,
+      "name": "Dược phẩm",
+      "description": "thuốc"
+    }
+  ]
+}

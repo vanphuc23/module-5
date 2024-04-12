@@ -44,6 +44,13 @@ function CreateNewVilla() {
         navigate('/service/villa');
     }
 
+    const [serviceName, setServiceName] = useState('');
+
+    const handleChange = (event) => {
+        const { value } = event.target;
+        setServiceName(value.toUpperCase());
+    };
+
     if(!rentalType) return null;
 
     return (
@@ -59,7 +66,7 @@ function CreateNewVilla() {
                             <h1 style={{textAlign:"center"}}>Thêm mới dịch vụ Villa</h1>
                             <div className="container">
                             <div className="mb-3">
-                                <label htmlFor="serviceName" className="form-label">Tên dịch vụ:</label>
+                                <label htmlFor="serviceName" className="form-label" >Tên dịch vụ:</label>
                                 <Field type="text" className="form-control" id="serviceName" name="serviceName"/>
                                 <ErrorMessage name="serviceName" component="span" style={{color:"red"}}></ErrorMessage>
                             </div>

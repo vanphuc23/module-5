@@ -4,6 +4,7 @@ import { NavLink } from "react-router-dom";
 import { toast } from "react-toastify";
 import * as Yup from "yup";
 import {
+    deleteAllVilla,
     deleteVilla,
     findByIdVilla,
     listRentalType,
@@ -84,15 +85,35 @@ function VillaList() {
 
     const handleShow = () => setShow(true);
 
+    const [deleteAll,setDeleteAll] = useState([])
+
+    const clickCheckBox = (e) => {
+        let newDeleteId = [...deleteAll, e];
+        setDeleteAll(newDeleteId);
+    }
+
+    const deleteItem = (item) => {
+        const deleteData = deleteAll.filter((data) => data !== item);
+        setDeleteAll(deleteData);
+    }
+
+    console.log(deleteAll)
+
+    const xoa = async () => {
+        deleteAll.map((item) => deleteAllVilla(item))
+        await list();
+    }
+
     if (!villa) return null;
     if (!rentalType) return null;
 
     return (
         <>
+             <button onClick={xoa} className="btn btn-outline-danger">Xóa</button>
         {villa2 && <Example show={show} setShow={setShow} data={villa2} showList={list} />}
             <h1 style={{textAlign: 'center'}}>Danh sách Villa</h1>
             <div className="container">
-                <NavLink to="/service/villa/create" className="btn btn-outline-primary">Thêm mới</NavLink>
+                <NavLink to="/villa/create" className="btn btn-outline-primary">Thêm mới</NavLink>
             </div>
             <table className="table container">
                 <thead>
@@ -107,7 +128,6 @@ function VillaList() {
                     <td>Diện tích hồ bơi</td>
                     <td>Số tầng</td>
                     <td>Chi phí thuê</td>
-                    <td></td>
                 </tr>
                 </thead>
                 <tbody>
@@ -124,7 +144,7 @@ function VillaList() {
                         <td>{item.floors}</td>
                         <td>{item.rentalCosts}</td>
                         <td>
-                            <NavLink to={`/service/villa/edit/${item.id}`}
+                            <NavLink to={`/villa/edit/${item.id}`}
                                      className='btn btn-outline-warning'>Edit</NavLink>
                             <button type="button" style={{marginLeft:'10px'}} className="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#exampleModal"
                             onClick={() => findId(item.id)}
@@ -139,6 +159,15 @@ function VillaList() {
                             <Button variant="primary" onClick={() => findById(item.id)}>
                                 Update
                             </Button>
+                        </td>
+                        <td>
+                            <input type="checkbox" value={item.id} onClick={(e)=> {
+                                if(e.target.checked) {
+                                    clickCheckBox(e.target.value);
+                                } else {
+                                    deleteItem(e.target.value);
+                                }
+                            }}/>
                         </td>
                     </tr>
                 ))}
